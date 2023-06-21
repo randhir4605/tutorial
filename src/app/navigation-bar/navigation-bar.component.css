@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+    background-color: rgb(55, 55, 55);
+    padding: 10px;
+}
+
+.brand{
+    font-weight: bold;
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: inline-block;
+    color: white;
+    
+}
+
+.nav-links{
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    font-weight: bold;
+    display: inline-block;
+    color: grey;
+    padding-left: 15%;
+    width: 70%;
+}
+
+.nav-links > ul > li{
+    display: inline-block;
+    padding: 10px;
+    
+}
+
+.navbar ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.navbar li:hover {
+    color: white;
+    cursor:pointer;
+}
+
+.navbar li:active{
+    color:white;
+}
+
+.profile-icon{
+    position: absolute;  /* position relative to parent */
+    right: 20px;   /* right alignment in parent box i.e navbar , without position this will work properly*/
+    font-size: 24px;
+    color: white;
+}
+
+.nav-dropdown{
+    /*mandatory properties */
+    display: none;
+    position: absolute;  /* position relative to parent */
+    z-index: 1;
+
+    /* Optional Properties */
+    background-color: rgb(55, 55, 55);
+    color: grey;
+    min-width: 160px;
+    padding: 12px 16px;
+}
+
+.nav-dropdown li {
+    padding: 5px;
+}
+
+.navbar li:hover .nav-dropdown{
+    display: block;
+}
